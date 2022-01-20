@@ -1,0 +1,8 @@
+<div class="employee-container">
+    <img [src]="employee.picture.medium" alt="employee.name.first employee.name.last" class="thumbnail">
+    <p><span class="bold-text">Name: </span>{{employee.name.first}} {{employee.name.last}}</p>
+    <p><span class="bold-text">DOB: </span>{{employee.dob.date | date: 'dd/MM/YYYY'}}</p>
+    <p><span class="bold-text">Email: </span>{{employee.email}}</p>
+    <p><span class="bold-text">Phone: </span>{{employee.phone}}</p>
+    <p><span class="bold-text">City: </span>{{employee.location.city}}</p>
+</div>

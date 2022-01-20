@@ -1,0 +1,27 @@
+.employee-grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(100px, 1fr));
+    grid-gap: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 15vh;
+}
+
+@media only screen and (min-width: 768px) {
+    .employee-grid {
+        grid-template-columns: repeat(2, minmax(150px, 1fr));
+        margin-left: 15px;
+        margin-right: 15px;
+        grid-gap: 20px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .employee-grid {
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+        margin-left: 15px;
+        margin-right: 15px;
+        grid-gap: 25px;
+    }
+}
